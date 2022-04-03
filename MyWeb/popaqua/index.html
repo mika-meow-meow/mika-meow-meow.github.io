@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        let count = 0;
+        function pop1(){
+            //alert("kon aqua!");
+            let img = document.getElementById("aqua");
+            img.src = "./pop2.jpg";
+            count += 1;
+
+            let n = document.getElementById("n");
+            n.innerHTML = count;
+        }
+        function pop2(){
+            //alert("kon aqua!");
+            let img = document.getElementById("aqua");
+            img.src = "./pop1.jpg";
+        }
+    </script>
+</head>
+
+<img id="aqua" src="./pop1.jpg"><p id="n">0</p><br>
+<input type="button" value="pop" name="按鈕名稱" style="width:500px;height:50px;" onmousedown="pop1()" onmouseup="pop2()">
+
+</html>
