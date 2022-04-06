@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>p'a'p'q'p'u'p'a'p</title>
     <script>
         let count = 0;
         function pop1(){
@@ -9,6 +10,9 @@
             let img = document.getElementById("aqua");
             img.src = "./pop2.jpg";
             count += 1;
+            const audio = document.createElement("audio");
+            audio.src = "./pop.mp3";
+            audio.play();
 
             let n = document.getElementById("n");
             n.innerHTML = count;
@@ -28,6 +32,7 @@ ontouchstart="pop1()"
 
 onmouseup="pop2()" 
 onmouseout="pop2()" 
-ontouchend="pop2()">
-
+ontouchend="pop2()"
+ontouchcancel="pop2()">
+<!---->
 </html>
